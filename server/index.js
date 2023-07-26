@@ -3,7 +3,7 @@ require("dotenv").config();
 const mongoose = require("mongoose");
 const connectDB = require("./db");
 const User = require("./models/User.js");
-const userRoute=require("./routes/users");
+const userRoute = require("./routes/users");
 
 //intialise app with express
 
@@ -19,11 +19,12 @@ app.use(express.static("public")); //static files
 
 //view engine
 
-app.set('view engine','ejs')
+app.set("view engine", "ejs");
 //app.set('views','myviews') //default views if we want in different folder
 
 //connect to db
-connectDB();
+
+// connectDB();
 
 //routes
 

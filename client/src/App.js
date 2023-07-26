@@ -1,11 +1,14 @@
+import React from 'react'
 import "./App.css";
+import MainContainer from "./Components/MainContainer";
 
-function App() {
+
+const App = () => {
   return (
-    <>
-      <h1>Home Page</h1>
-    </>
-  );
+    <div className='App'>
+      <MainContainer/>
+    </div>
+  )
 }
 
-export default App;
+export default App
